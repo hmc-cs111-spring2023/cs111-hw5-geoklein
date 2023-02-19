@@ -1,7 +1,5 @@
 package dfa // leave this line in the file
 
-// TODO: replace this comment with your implementation
-
 case class State(label: String)
 case class Transition(from: State, to: State, symbol: Char)
 
