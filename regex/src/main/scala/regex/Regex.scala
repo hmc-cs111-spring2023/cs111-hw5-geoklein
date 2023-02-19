@@ -49,7 +49,6 @@ def simplify(lang: RegularLanguage): RegularLanguage = lang match
 /** A language is nullable if it contains ε */
 def nullable(lang: RegularLanguage): Boolean = simplify(lang) match
   case Epsilon => true
-  case Empty => true
   case Star(_) => true
 
   case Union(exp1, exp2) => nullable(exp1) || nullable(exp2)
