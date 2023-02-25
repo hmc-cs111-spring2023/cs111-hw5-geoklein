@@ -9,7 +9,7 @@ class NullableSpec extends AnyFunSuite with Matchers:
     nullable(Epsilon) should be(true)
   }
 
-  test("∅ should be nullable") {
+  test("∅ should not be nullable") {
     nullable(Empty) should be(false)
   }
 
